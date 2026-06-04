@@ -12,8 +12,8 @@ export const navItems = [
 ];
 
 export const hero = {
-  title: 'Đạo đức cách mạng',
-  subtitle: 'Gốc của người cách mạng',
+  title: 'Đạo đức cách mạng  Gốc của người cách mạng',
+
 };
 
 export const sections = [
