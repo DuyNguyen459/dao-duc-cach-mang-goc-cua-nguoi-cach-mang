@@ -17,10 +17,45 @@ export default function NarrativeSection({ section, dilemma }) {
         </aside>
 
         <div className="section-body">
-          <div className="section-heading">
-            <h2>{section.title}</h2>
-            <p>{section.lead}</p>
-          </div>
+          {section.videoUrl ? (
+            <div className="intro-layout">
+              <div className="intro-content">
+                <div className="section-heading">
+                  <h2>{section.title}</h2>
+                  <p>{section.lead}</p>
+                </div>
+              </div>
+              <div className="intro-video">
+                <div className="video-container">
+                  <video width="100%" height="auto" controls style={{ borderRadius: '8px' }}>
+                    <source src={section.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="section-heading">
+              <h2>{section.title}</h2>
+              <p>{section.lead}</p>
+            </div>
+          )}
+          
+          {section.causes && (
+            <div className="point-grid">
+              {section.causes.map((cause) => (
+                <article key={cause}>
+                  <p>{cause}</p>
+                </article>
+              ))}
+            </div>
+          )}
+          
+          {section.reflection && (
+            <div className="reflection-box">
+              <p>{section.reflection}</p>
+            </div>
+          )}
 
           {section.points && (
             <div className="point-grid">
@@ -106,7 +141,7 @@ export default function NarrativeSection({ section, dilemma }) {
 
           {section.id === 'genz' && <DilemmaInteraction dilemma={dilemma} />}
 
-          <QuoteBlock quote={section.quote} />
+          {section.quote && <QuoteBlock quote={section.quote} />}
         </div>
       </div>
     </section>

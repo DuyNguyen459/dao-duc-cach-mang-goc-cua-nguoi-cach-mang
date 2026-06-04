@@ -1,5 +1,7 @@
 export const navItems = [
   { id: 'hero', label: 'Mở đầu' },
+  { id: 'duc-la-goc-intro', label: 'Video: Đế quốc La Mã' },
+  { id: 'duc-la-goc-answer', label: 'Phân tích nguyên nhân' },
   { id: 'duc-la-goc', label: 'Đức là gốc' },
   { id: 'standards', label: 'Chuẩn mực' },
   { id: 'inner-enemy', label: 'Giặc nội xâm' },
@@ -10,7 +12,6 @@ export const navItems = [
 ];
 
 export const hero = {
-  eyebrow: 'Microsite presentation',
   title: 'Đạo đức cách mạng - Gốc của người cách mạng',
   subtitle:
     'Từ tư tưởng Hồ Chí Minh đến yêu cầu xây dựng Đảng và trách nhiệm của thế hệ trẻ trong kỷ nguyên mới.'
@@ -18,9 +19,34 @@ export const hero = {
 
 export const sections = [
   {
+    id: 'duc-la-goc-intro',
+    number: '01',
+    member: 'Phan Thanh Đức',
+    kicker: 'Dẫn dắt',
+    title: 'Sụp đổ của Đế quốc La Mã',
+    lead: 'Tại sao một đế quốc hùng mạnh và tồn tại lâu như vậy lại sụp đổ và biến mất mãi mãi trên bản đồ thế giới?',
+    videoUrl: '/videos/7899268136682.mp4',
+    isIntroSlide: true
+  },
+  {
+    id: 'duc-la-goc-answer',
+    number: '01',
+    member: 'Phan Thanh Đức',
+    kicker: 'Phân tích nguyên nhân',
+    title: 'Nguyên nhân sụp đổ Đế quốc La Mã',
+    lead: 'Sự sụp đổ của Đế quốc La Mã, ngoài các cuộc xâm lược bên ngoài, nguyên nhân quan trọng còn đến từ:',
+    causes: [
+      'Tham nhũng',
+      'Đấu đá quyền lực',
+      'Tầng lớp cầm quyền xa rời nhân dân',
+      'Sự suy giảm kỷ cương trong bộ máy nhà nước'
+    ],
+    reflection: 'Nhìn nhận từ những gì đã thấy trong quá khứ, liệu những gì đã từng xảy ra ở đế chế La Mã có lặp lại với các quốc gia khác hiện nay?'
+  },
+  {
     id: 'duc-la-goc',
     number: '01',
-    member: 'Thành viên 1',
+    member: 'Phan Thanh Đức',
     kicker: 'Đặt vấn đề',
     title: 'Vì sao đạo đức là cái gốc?',
     lead:
@@ -43,7 +69,7 @@ export const sections = [
   {
     id: 'standards',
     number: '02',
-    member: 'Thành viên 2',
+    member: 'Hoàng Anh Khoa',
     kicker: 'Chuẩn mực cốt lõi',
     title: 'Đạo đức phải được rèn luyện trong đời sống cụ thể',
     lead:
@@ -62,7 +88,7 @@ export const sections = [
   {
     id: 'inner-enemy',
     number: '03',
-    member: 'Thành viên 3',
+    member: 'Hoàng Bảo Ân',
     kicker: 'Nhận diện thách thức',
     title: '“Giặc nội xâm” phá hoại từ bên trong',
     lead:
@@ -79,7 +105,7 @@ export const sections = [
   {
     id: 'documents',
     number: '04',
-    member: 'Thành viên 4',
+    member: 'Trần Đặng Minh Quân',
     kicker: 'Phân tích văn kiện',
     title: 'Đạo đức trong Văn kiện Đại hội XIV',
     lead:
@@ -99,7 +125,7 @@ export const sections = [
   {
     id: 'discipline',
     number: '05',
-    member: 'Thành viên 5',
+    member: 'Hoàng Nguyễn Trọng Nhã',
     kicker: 'Kỷ luật thép và đổi mới',
     title: 'Kỷ luật là lá chắn, đổi mới là động lực',
     lead:
@@ -117,7 +143,7 @@ export const sections = [
   {
     id: 'genz',
     number: '06',
-    member: 'Thành viên 6',
+    member: 'Nguyễn Đình Duy',
     kicker: 'Liên hệ sinh viên',
     title: 'Gen Z, AI và lựa chọn liêm chính',
     lead:

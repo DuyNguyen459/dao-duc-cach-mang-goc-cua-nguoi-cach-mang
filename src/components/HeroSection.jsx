@@ -15,7 +15,7 @@ export default function HeroSection({ hero, onStart }) {
             <button type="button" className="primary-button" onClick={onStart}>
               Bắt đầu thuyết trình
             </button>
-            <span className="scroll-hint">Cuộn như một microsite, trình bày như một câu chuyện.</span>
+            <span className="scroll-hint"></span>
           </div>
         </div>
       </div>
