@@ -40,7 +40,7 @@ export default function NarrativeSection({ section, dilemma }) {
               <p>{section.lead}</p>
             </div>
           )}
-          
+
           {section.causes && (
             <div className="point-grid">
               {section.causes.map((cause) => (
@@ -50,7 +50,7 @@ export default function NarrativeSection({ section, dilemma }) {
               ))}
             </div>
           )}
-          
+
           {section.reflection && (
             <div className="reflection-box">
               <p>{section.reflection}</p>

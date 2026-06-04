@@ -134,8 +134,8 @@ button {
   line-height: 1.05;
   font-weight: 800;
   margin-bottom: 16px;
-  text-shadow: 
-    0 2px 12px rgba(255, 250, 240, 0.95), 
+  text-shadow:
+    0 2px 12px rgba(255, 250, 240, 0.95),
     0 1px 3px rgba(255, 250, 240, 0.95);
 }
 
@@ -153,8 +153,8 @@ button {
   line-height: 1.2;
   margin-bottom: 36px;
   max-width: 100%;
-  text-shadow: 
-    0 2px 12px rgba(255, 250, 240, 0.95), 
+  text-shadow:
+    0 2px 12px rgba(255, 250, 240, 0.95),
     0 1px 4px rgba(255, 250, 240, 0.95);
 }
 
@@ -163,6 +163,7 @@ button {
     opacity: 0;
     transform: translateY(24px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
