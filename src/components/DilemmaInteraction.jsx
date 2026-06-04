@@ -7,7 +7,6 @@ export default function DilemmaInteraction({ dilemma }) {
   return (
     <section className="dilemma-panel" aria-label="Tình huống tương tác">
       <div>
-        <p className="eyebrow">Ethical dilemma</p>
         <h3>Tình huống AI trong học tập</h3>
         <p>{dilemma.situation}</p>
       </div>

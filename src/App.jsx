@@ -66,7 +66,7 @@ export default function App() {
       <ProgressBar progress={progress} />
 
       <main>
-        <HeroSection hero={hero} onStart={() => scrollToSection('duc-la-goc')} />
+        <HeroSection hero={hero} onStart={() => scrollToSection('duc-la-goc-intro')} />
         {sections.map((section) => (
           <NarrativeSection key={section.id} section={section} dilemma={dilemma} />
         ))}

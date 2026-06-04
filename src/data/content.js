@@ -12,9 +12,8 @@ export const navItems = [
 ];
 
 export const hero = {
-  title: 'Đạo đức cách mạng - Gốc của người cách mạng',
-  subtitle:
-    'Từ tư tưởng Hồ Chí Minh đến yêu cầu xây dựng Đảng và trách nhiệm của thế hệ trẻ trong kỷ nguyên mới.'
+  title: 'Đạo đức cách mạng',
+  subtitle: 'Gốc của người cách mạng',
 };
 
 export const sections = [
