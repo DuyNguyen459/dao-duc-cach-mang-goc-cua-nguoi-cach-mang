@@ -1124,38 +1124,205 @@ h3 {
 }
 
 #inner-enemy {
+  min-height: 100vh;
+  height: 100vh;
+  padding: 38px 0 58px;
+  overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(23, 21, 20, 0.72), rgba(77, 17, 23, 0.78)),
-    linear-gradient(90deg, rgba(77, 17, 23, 0.28), rgba(143, 29, 36, 0.2)),
+    radial-gradient(circle at 50% 18%, rgba(241, 206, 116, 0.22), transparent 22rem),
+    linear-gradient(135deg, rgba(23, 21, 20, 0.56), rgba(77, 17, 23, 0.78)),
+    linear-gradient(90deg, rgba(77, 17, 23, 0.18), rgba(143, 29, 36, 0.16)),
     url('/images/Vi%E1%BB%87t%20Nam.png') center / cover no-repeat;
 }
 
+#inner-enemy .section-shell {
+  width: min(1180px, calc(100% - 36px));
+}
+
+#inner-enemy .section-grid {
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: clamp(24px, 3vw, 48px);
+  align-items: start;
+}
+
+#inner-enemy .section-meta {
+  position: static;
+  display: block;
+  padding-top: 134px;
+}
+
 #inner-enemy .section-body {
-  max-width: 980px;
+  max-width: none;
 }
 
 #inner-enemy .section-heading {
-  max-width: 900px;
+  max-width: none;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 #inner-enemy .section-heading h2 {
-  max-width: 860px;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
+  max-width: none;
+  margin-bottom: 12px;
+  color: #fff7df;
+  font-size: clamp(3.3rem, 5.4vw, 5.2rem);
+  line-height: 0.98;
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.28);
 }
 
 #inner-enemy .section-heading p {
-  max-width: 880px;
-  color: rgba(247, 240, 223, 0.82);
-  font-weight: 600;
+  max-width: none;
+  margin-bottom: 0;
+  color: rgba(255, 247, 223, 0.92);
+  font-size: clamp(1.02rem, 1.35vw, 1.24rem);
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 #inner-enemy .section-meta span {
   color: rgba(202, 161, 74, 0.42);
 }
 
+#inner-enemy .threat-card-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+#inner-enemy .threat-card-grid article {
+  position: relative;
+  min-height: 282px;
+  padding: 60px 24px 26px;
+  border: 1px solid rgba(241, 206, 116, 0.32);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(91, 25, 24, 0.56), rgba(50, 18, 18, 0.48));
+  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 250, 240, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+#inner-enemy .threat-card-grid article::before {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  display: grid;
+  width: 70px;
+  height: 70px;
+  place-items: center;
+  border: 1px solid rgba(241, 206, 116, 0.58);
+  border-radius: 50%;
+  color: #f1ce74;
+  background: radial-gradient(circle, rgba(255, 232, 168, 0.26), rgba(112, 38, 32, 0.82));
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
+  content: '•••';
+  font-size: 1.42rem;
+  font-weight: 800;
+  transform: translateX(-50%);
+}
+
+#inner-enemy .threat-card-grid article:nth-child(2) {
+  min-height: 318px;
+  padding-top: 70px;
+  border-color: rgba(241, 206, 116, 0.62);
+  background: linear-gradient(145deg, rgba(255, 250, 240, 0.96), rgba(250, 219, 156, 0.9));
+  box-shadow: 0 26px 68px rgba(0, 0, 0, 0.28), 0 0 38px rgba(241, 206, 116, 0.18);
+}
+
+#inner-enemy .threat-card-grid article:nth-child(2)::before {
+  width: 82px;
+  height: 82px;
+  color: #8f1d24;
+  background: linear-gradient(145deg, #fffaf0, #f7d58b);
+  content: '!';
+  font-size: 2rem;
+}
+
+#inner-enemy .threat-card-grid article:nth-child(3)::before {
+  content: '✓';
+  font-size: 1.9rem;
+}
+
+#inner-enemy .threat-card-grid h3 {
+  margin-bottom: 22px;
+  color: #f1ce74;
+  font-size: clamp(1.12rem, 1.35vw, 1.38rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+#inner-enemy .threat-card-grid article:nth-child(2) h3 {
+  color: #8f1d24;
+}
+
+#inner-enemy .threat-card-grid ul {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#inner-enemy .threat-card-grid li {
+  position: relative;
+  padding-left: 24px;
+  color: rgba(247, 240, 223, 0.9);
+  font-size: clamp(0.94rem, 1.05vw, 1.04rem);
+  font-weight: 650;
+  line-height: 1.48;
+}
+
+#inner-enemy .threat-card-grid article:nth-child(2) li {
+  color: #5b1918;
+  font-weight: 750;
+}
+
+#inner-enemy .threat-card-grid li::before {
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  content: '';
+}
+
+#inner-enemy .quote-block {
+  margin-top: 24px;
+  padding: 20px 44px 22px 110px;
+  border: 1px solid rgba(241, 206, 116, 0.66);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 250, 240, 0.98), rgba(255, 237, 195, 0.92));
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.56);
+}
+
+#inner-enemy .quote-block span {
+  top: 2px;
+  right: auto;
+  left: 36px;
+  color: rgba(202, 161, 74, 0.74);
+  font-size: 6.5rem;
+}
+
+#inner-enemy .quote-block p {
+  max-width: none;
+  color: #4d1117;
+  font-size: clamp(1.05rem, 1.42vw, 1.34rem);
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.5;
+}
+
 #inner-enemy .warning-grid {
   max-width: 980px;
   gap: 14px;
+}
+
+#inner-enemy .reflection-box {
+  margin-bottom: 28px;
 }
 
 #inner-enemy .warning-grid article {
@@ -1485,6 +1652,17 @@ h3 {
     padding: 0;
   }
 
+  #inner-enemy {
+    height: auto;
+    min-height: 100vh;
+    padding: 96px 0;
+    overflow: visible;
+  }
+
+  #inner-enemy .section-meta {
+    padding-top: 0;
+  }
+
   .section-meta span {
     margin: 0;
     font-size: 3.2rem;
@@ -1556,10 +1734,15 @@ h3 {
 
   #inner-enemy .section-body,
   #inner-enemy .section-heading,
+  #inner-enemy .threat-card-grid,
   #inner-enemy .warning-grid,
   #inner-enemy .timeline,
   #inner-enemy .solution-row {
     max-width: 980px;
+  }
+
+  #inner-enemy .threat-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   #genz .section-grid {
@@ -1576,6 +1759,7 @@ h3 {
   .standards-grid,
   .warning-grid,
   .concept-strip,
+  .threat-card-grid,
   .timeline {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1681,6 +1865,14 @@ h3 {
     background:
       linear-gradient(135deg, rgba(23, 21, 20, 0.78), rgba(77, 17, 23, 0.82)),
       url('/images/Vi%E1%BB%87t%20Nam.png') center / cover no-repeat;
+  }
+
+  #inner-enemy .threat-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #inner-enemy .threat-card-grid article {
+    min-height: auto;
   }
 
   #discipline .section-heading h2 {

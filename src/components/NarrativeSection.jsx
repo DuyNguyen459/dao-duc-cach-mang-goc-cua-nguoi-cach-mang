@@ -88,6 +88,21 @@ export default function NarrativeSection({ section, dilemma, sectionIndex }) {
             </div>
           )}
 
+          {section.threatCards && (
+            <div className="threat-card-grid">
+              {section.threatCards.map(([title, items]) => (
+                <article key={title}>
+                  <h3>{title}</h3>
+                  <ul>
+                    {items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          )}
+
           {section.warnings && (
             <div className="warning-grid">
               {section.warnings.map(([title, body]) => (
