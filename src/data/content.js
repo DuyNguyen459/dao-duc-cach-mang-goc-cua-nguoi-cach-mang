@@ -184,7 +184,7 @@ export const dilemma = {
 export const declaration = {
   title: 'AI Declaration - Tuyên bố sử dụng AI có trách nhiệm',
   body:
-    'Nhóm đã sử dụng các công cụ AI như NotebookLM, ChatGPT để hỗ trợ tóm tắt tài liệu, lên ý tưởng kịch bản và tạo bộ câu hỏi trắc nghiệm. Tuy nhiên, nhóm cam kết: toàn bộ luận điểm lý luận, các trích dẫn từ Giáo trình Tư tưởng Hồ Chí Minh và Văn kiện Đại hội XIV đều do các thành viên trực tiếp đọc, kiểm chứng và biên tập. Nhóm làm chủ công cụ, chứ không để công cụ làm chủ tư duy của mình.',
+    'Nhóm đã sử dụng các công cụ AI như NotebookLM, ChatGPT để hỗ trợ tóm tắt tài liệu, lên ý tưởng kịch bản. Tuy nhiên, nhóm cam kết: toàn bộ luận điểm lý luận, các trích dẫn từ Giáo trình Tư tưởng Hồ Chí Minh và Văn kiện Đại hội XIV đều do các thành viên trực tiếp đọc, kiểm chứng và biên tập. Nhóm làm chủ công cụ, chứ không để công cụ làm chủ tư duy của mình.',
   marks: ['Minh bạch', 'Kiểm chứng', 'Làm chủ công cụ']
 };
 
