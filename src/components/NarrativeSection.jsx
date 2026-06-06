@@ -4,11 +4,12 @@ import QuoteBlock from './QuoteBlock.jsx';
 import StandardCard from './StandardCard.jsx';
 import Timeline from './Timeline.jsx';
 
-export default function NarrativeSection({ section, dilemma }) {
+export default function NarrativeSection({ section, dilemma, sectionIndex }) {
   const isDark = section.id === 'inner-enemy';
+  const toneClass = isDark ? 'dark-section' : sectionIndex % 2 === 0 ? 'section-tone-blush' : 'section-tone-warm';
 
   return (
-    <section id={section.id} className={`narrative-section ${isDark ? 'dark-section' : ''}`}>
+    <section id={section.id} className={`narrative-section ${toneClass}`}>
       <div className="section-shell section-grid">
         <aside className="section-meta">
           <span>{section.number}</span>
@@ -83,6 +84,21 @@ export default function NarrativeSection({ section, dilemma }) {
             <div className="standards-grid">
               {section.standards.map(([title, body, example]) => (
                 <StandardCard key={title} title={title} body={body} example={example} />
+              ))}
+            </div>
+          )}
+
+          {section.threatCards && (
+            <div className="threat-card-grid">
+              {section.threatCards.map(([title, items]) => (
+                <article key={title}>
+                  <h3>{title}</h3>
+                  <ul>
+                    {items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </article>
               ))}
             </div>
           )}

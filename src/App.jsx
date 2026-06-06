@@ -67,8 +67,8 @@ export default function App() {
 
       <main>
         <HeroSection hero={hero} onStart={() => scrollToSection('duc-la-goc-intro')} />
-        {sections.map((section) => (
-          <NarrativeSection key={section.id} section={section} dilemma={dilemma} />
+        {sections.map((section, index) => (
+          <NarrativeSection key={section.id} section={section} dilemma={dilemma} sectionIndex={index} />
         ))}
         <AIDeclaration declaration={declaration} />
         <FooterReferences references={references} />

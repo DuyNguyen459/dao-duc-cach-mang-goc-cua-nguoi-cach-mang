@@ -12,8 +12,8 @@ export const navItems = [
 ];
 
 export const hero = {
-  title: 'Đạo đức cách mạng',
-  subtitle: 'Gốc của người cách mạng',
+  title: 'Đạo đức cách mạng  Gốc của người cách mạng',
+
 };
 
 export const sections = [
@@ -89,17 +89,39 @@ export const sections = [
     number: '03',
     member: 'Hoàng Bảo Ân',
     kicker: 'Nhận diện thách thức',
-    title: '“Giặc nội xâm” phá hoại từ bên trong',
+    title: '“Giặc nội xâm”',
     lead:
-      'Hồ Chí Minh cảnh báo không chỉ kẻ thù bên ngoài, mà cả những căn bệnh nội tại làm xói mòn đạo đức, kỷ luật và niềm tin.',
-    quote: 'Chống “giặc nội xâm” là nhiệm vụ xây dựng, chỉnh đốn Đảng một cách toàn diện.',
-    warnings: [
-      ['Tham ô', 'Lấy của công làm của tư, đặt lợi ích riêng trên lợi ích nhân dân.'],
-      ['Lãng phí', 'Sử dụng tiền của, thời gian, sức lao động một cách vô ích.'],
-      ['Quan liêu', 'Xa thực tế, xa nhân dân, làm việc hình thức, thiếu sâu sát.']
+      'Sự suy thoái từ bên trong đội ngũ cán bộ, đảng viên.',
+    threatCards: [
+      [
+        'BIỂU HIỆN',
+        [
+          'Suy thoái tư tưởng, đạo đức, lối sống',
+          'Chủ nghĩa cá nhân',
+          'Tham ô, lãng phí, quan liêu',
+          'Lạm quyền, trục lợi, xa dân'
+        ]
+      ],
+      [
+        'MỨC ĐỘ NGUY HIỂM',
+        [
+          'Nằm ngay trong bộ máy, trong người có chức quyền',
+          'Làm suy yếu kỷ luật và đạo đức cách mạng',
+          'Làm xói mòn niềm tin của nhân dân đối với Đảng'
+        ]
+      ],
+      [
+        'PHÒNG, CHỐNG',
+        [
+          'Rèn luyện cần, kiệm, liêm, chính',
+          'Kiểm soát quyền lực',
+          'Dựa vào nhân dân giám sát',
+          'Xử lý nghiêm sai phạm, không có vùng cấm'
+        ]
+      ]
     ],
-    timeline: ['Chủ nghĩa cá nhân', 'Suy thoái đạo đức', 'Lạm quyền / trục lợi', 'Mất niềm tin nhân dân'],
-    solutions: ['Rèn luyện đạo đức', 'Thực hành dân chủ', 'Tự phê bình và phê bình', 'Xử lý nghiêm sai phạm']
+    quote:
+      'Nếu giặc ngoại xâm xâm phạm lãnh thổ, thì ‘giặc nội xâm’ xâm phạm niềm tin, đạo đức và sức mạnh của Đảng.'
   },
   {
     id: 'documents',
